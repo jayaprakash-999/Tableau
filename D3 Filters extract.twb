@@ -1,0 +1,1729 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0910.0334                               -->
+<workbook original-version='18.1' source-build='2024.2.3 (20242.24.0910.0334)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Orders (Sample - Superstore)' inline='true' name='federated.105v33w097flo312ed01c18ssyof' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sample - Superstore' name='excel-direct.0p3opa317spfjc18dl4yd1on4riy'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Applications/Tableau/Sample - Superstore.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0p3opa317spfjc18dl4yd1on4riy' name='Orders' table='[Orders$]' type='table'>
+          <columns gridOrigin='A1:U10195:no:A1:U10195:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Row ID' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Order Date' ordinal='2' />
+            <column datatype='date' name='Ship Date' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Customer ID' ordinal='5' />
+            <column datatype='string' name='Customer Name' ordinal='6' />
+            <column datatype='string' name='Segment' ordinal='7' />
+            <column datatype='string' name='Country/Region' ordinal='8' />
+            <column datatype='string' name='City' ordinal='9' />
+            <column datatype='string' name='State/Province' ordinal='10' />
+            <column datatype='string' name='Postal Code' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='string' name='Product ID' ordinal='13' />
+            <column datatype='string' name='Category' ordinal='14' />
+            <column datatype='string' name='Sub-Category' ordinal='15' />
+            <column datatype='string' name='Product Name' ordinal='16' />
+            <column datatype='real' name='Sales' ordinal='17' />
+            <column datatype='integer' name='Quantity' ordinal='18' />
+            <column datatype='real' name='Discount' ordinal='19' />
+            <column datatype='real' name='Profit' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0p3opa317spfjc18dl4yd1on4riy' name='Orders' table='[Orders$]' type='table'>
+          <columns gridOrigin='A1:U10195:no:A1:U10195:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Row ID' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Order Date' ordinal='2' />
+            <column datatype='date' name='Ship Date' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Customer ID' ordinal='5' />
+            <column datatype='string' name='Customer Name' ordinal='6' />
+            <column datatype='string' name='Segment' ordinal='7' />
+            <column datatype='string' name='Country/Region' ordinal='8' />
+            <column datatype='string' name='City' ordinal='9' />
+            <column datatype='string' name='State/Province' ordinal='10' />
+            <column datatype='string' name='Postal Code' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='string' name='Product ID' ordinal='13' />
+            <column datatype='string' name='Category' ordinal='14' />
+            <column datatype='string' name='Sub-Category' ordinal='15' />
+            <column datatype='string' name='Product Name' ordinal='16' />
+            <column datatype='real' name='Sales' ordinal='17' />
+            <column datatype='integer' name='Quantity' ordinal='18' />
+            <column datatype='real' name='Discount' ordinal='19' />
+            <column datatype='real' name='Profit' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U10195:no:A1:U10195:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Row ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Mode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Mode</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country/Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country/Region]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Country/Region</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State/Province</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State/Province]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>State/Province</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sub-Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sub-Category</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country/Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column datatype='integer' name='[Row ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State/Province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Orders' datatype='table' name='[__tableau_internal_object_id__].[Orders_46AA83F74B634B05A5E44E9DC28013F8]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Prakash/OneDrive/Documents/My Tableau Repository/Datasources/Orders (Sample - Superstore).hyper' default-settings='yes' schema='Extract' sslmode='' update-time='10/21/2024 07:42:00 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Orders (Sample - Superstore)' increment-value='%null%' refresh-type='create' rows-inserted='1865' timestamp-start='2024-10-21 07:41:59.648' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Row ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Row ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Row ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Orders</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1865</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order ID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1278</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Order Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Orders</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>732</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ship Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Ship Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ship Date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Orders</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>794</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ship Mode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ship Mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ship Mode</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer ID</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>635</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>635</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Segment</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country/Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country/Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country/Region</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>317</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State/Province</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State/Province]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State/Province</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Postal Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Postal Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Postal Code</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>396</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product ID</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>401</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sub-Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sub-Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sub-Category</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product Name</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>410</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Orders</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1077</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Orders</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Discount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Discount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Discount</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Orders</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Orders</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1222</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_46AA83F74B634B05A5E44E9DC28013F8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+        <filter class='categorical' column='[Category]'>
+          <groupfilter function='member' level='[Category]' member='&quot;Technology&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        </filter>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Orders' id='Orders_46AA83F74B634B05A5E44E9DC28013F8'>
+            <properties context=''>
+              <relation connection='excel-direct.0p3opa317spfjc18dl4yd1on4riy' name='Orders' table='[Orders$]' type='table'>
+                <columns gridOrigin='A1:U10195:no:A1:U10195:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Row ID' ordinal='0' />
+                  <column datatype='string' name='Order ID' ordinal='1' />
+                  <column datatype='date' name='Order Date' ordinal='2' />
+                  <column datatype='date' name='Ship Date' ordinal='3' />
+                  <column datatype='string' name='Ship Mode' ordinal='4' />
+                  <column datatype='string' name='Customer ID' ordinal='5' />
+                  <column datatype='string' name='Customer Name' ordinal='6' />
+                  <column datatype='string' name='Segment' ordinal='7' />
+                  <column datatype='string' name='Country/Region' ordinal='8' />
+                  <column datatype='string' name='City' ordinal='9' />
+                  <column datatype='string' name='State/Province' ordinal='10' />
+                  <column datatype='string' name='Postal Code' ordinal='11' />
+                  <column datatype='string' name='Region' ordinal='12' />
+                  <column datatype='string' name='Product ID' ordinal='13' />
+                  <column datatype='string' name='Category' ordinal='14' />
+                  <column datatype='string' name='Sub-Category' ordinal='15' />
+                  <column datatype='string' name='Product Name' ordinal='16' />
+                  <column datatype='real' name='Sales' ordinal='17' />
+                  <column datatype='integer' name='Quantity' ordinal='18' />
+                  <column datatype='real' name='Discount' ordinal='19' />
+                  <column datatype='real' name='Profit' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sales of apple Product'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore)' name='federated.105v33w097flo312ed01c18ssyof' />
+          </datasources>
+          <datasource-dependencies datasource='federated.105v33w097flo312ed01c18ssyof'>
+            <column datatype='string' name='[Product Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Product Name]' derivation='None' name='[none:Product Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.105v33w097flo312ed01c18ssyof].[none:Product Name:nk]'>
+            <groupfilter expression='CONTAINS([Product Name], &apos;Apple&apos;)' function='filter' user:ui-enumeration='inclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='Apple' user:ui-pattern_type='contains'>
+              <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;3D Systems Cube Printer, 2nd Generation, Magenta&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;3D Systems Cube Printer, 2nd Generation, White&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Aastra 57i VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Aastra 6757i CT Wireless VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Adtran 1202752G1&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;AmazonBasics 3-Button USB Wired Mouse&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Anker 24W Portable Micro USB Car Charger&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Anker 36W 4-Port USB Wall Charger Travel Power Adapter for iPhone 5s 5c 5&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Anker Astro 15000mAh USB Portable Charger&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Anker Astro Mini 3000mAh Ultra-Compact Portable Charger&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Anker Ultra-Slim Mini Bluetooth 3.0 Wireless Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Anker Ultrathin Bluetooth Wireless Keyboard Aluminum Cover with Stand&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Apple EarPods with Remote and Mic&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Apple iPhone 5&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Apple iPhone 5C&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Apple iPhone 5S&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;ARKON Windshield Dashboard Air Vent Car Mount Holder&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;AT&amp;T 1070 Corded Phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;AT&amp;T 1080 Corded phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;AT&amp;T 1080 Phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;AT&amp;T 17929 Lendline Telephone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;AT&amp;T 841000 Phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;AT&amp;T CL2909&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;AT&amp;T CL82213&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;AT&amp;T CL83451 4-Handset Telephone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;AT&amp;T EL51110 DECT&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;AT&amp;T SB67148 SynJ&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;AT&amp;T TR1909W&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Ativa D5772 2-Line 5.8GHz Digital Expandable Corded/Cordless Phone System with Answering &amp; Caller ID/Call Waiting, Black/Silver&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Ativa MDM8000 8-Sheet Micro-Cut Shredder&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Ativa V4110MDD Micro-Cut Shredder&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Avaya 4621SW VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Avaya 5410 Digital phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Avaya 5420 Digital phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Avaya IP Phone 1140E VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Bady BDG101FRU Card Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Belkin F8E887 USB Wired Ergonomic Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Belkin Grip Candy Sheer Case / Cover for iPhone 5 and 5S&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Belkin iPhone and iPad Lightning Cable&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Belkin QODE FastFit Bluetooth Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Belkin SportFit Armband For iPhone 5s/5c, Fuchsia&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Belkin Standard 104 key USB Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;BlackBerry Q10&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Blue Parrot B250XT Professional Grade Wireless Bluetooth Headset with&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;BlueLounge Milo Smartphone Stand, White/Metallic&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Bose SoundLink Bluetooth Speaker&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Brother DCP1000 Digital 3 in 1 Multifunction Machine&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Brother MFC-9340CDW LED All-In-One Printer, Copier Scanner&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Canon Color ImageCLASS MF8580Cdw Wireless Laser All-In-One Printer, Copier, Scanner&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Canon Image Class D660 Copier&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Canon imageCLASS 2200 Advanced Copier&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Canon Imageclass D680 Copier / Fax&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Canon imageCLASS MF7460 Monochrome Digital Laser Multifunction Copier&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Canon PC-428 Personal Copier&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Canon PC1060 Personal Laser Copier&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Canon PC1080F Personal Copier&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Canon PC170 Desktop Personal Copier&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Canon PC940 Copier&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Case Logic 2.4GHz Wireless Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cherry 142-key Programmable Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco 8961 IP Phone Charcoal&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco 8x8 Inc. 6753i IP Business Phone System&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco 9971 IP Video Phone Charcoal&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco CP-7937G Unified IP Conference Station Phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco Desktop Collaboration Experience DX650 IP Video Phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco IP Phone 7961G VoIP phone - Dark gray&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco IP Phone 7961G-GE VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco Small Business SPA 502G VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco SPA 501G IP Phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco SPA 502G IP Phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco SPA112 2 Port Phone Adapter&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco SPA301&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco SPA508G&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco SPA525G2 5-Line IP Phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco SPA525G2 IP Phone - Wireless&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco TelePresence System EX90 Videoconferencing Unit&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cisco Unified IP Phone 7945G VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Clarity 53712&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Classic Ivory Antique Telephone ZL1810&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;ClearOne CHATAttach 160 - speaker phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;ClearOne Communications CHAT 70 OC Speaker Phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Clearsounds A400&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;ClearSounds CSC500 Amplified Spirit Phone Corded phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cubify CubeX 3D Printer Double Head Print&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cubify CubeX 3D Printer Triple Head Print&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cush Cases Heavy Duty Rugged Cover Case for Samsung Galaxy S5 - Purple&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Cyber Acoustics AC-202b Speech Recognition Stereo Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Dell Slim USB Multimedia Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Dexim XPower Skin Super-Thin Power Case for iPhone 5 - Black&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Digium D40 VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;DYMO CardScan Personal V9 Business Card Scanner&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Enermax Acrylux Wireless Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Enermax Aurora Lite Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Enermax Briskie RF Wireless Keyboard and Mouse Combo&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Epson Perfection V600 Photo Scanner&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Epson TM-T88V Direct Thermal Printer - Monochrome - Desktop&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Epson WorkForce WF-2530 All-in-One Printer, Copier Scanner&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Fellowes Powershred HS-440 4-Sheet High Security Shredder&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;First Data FD10 PIN Pad&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;First Data TMFD35 PIN Pad&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;GE 2-Jack Phone Line Splitter&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;GE 30522EE2&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;GE 30524EE4&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;GE DSL Phone Line Filter&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Gear Head AU3700S Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Geemarc AmpliPOWER60&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Google Nexus 5&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Grandstream GXP1160 VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Grandstream GXP2100 Mainstream Business Phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Griffin GC17055 Auxiliary Audio Cable&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Griffin GC36547 PowerJolt SE Lightning Charger&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Hewlett Packard 310 Color Digital Copier&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Hewlett Packard 610 Color Digital Copier / Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Hewlett Packard LaserJet 3310 Copier&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Hewlett-Packard 300S Scientific Calculator&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Hewlett-Packard Deskjet 3050a All-in-One Color Inkjet Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Hewlett-Packard Deskjet 5550 Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Hewlett-Packard Deskjet 6540 Color Inkjet Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Hewlett-Packard Deskjet D4360 Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Hewlett-Packard Deskjet F4180 All-in-One Color Ink-jet - Printer / copier / scanner&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Hewlett-Packard Desktjet 6988DT Refurbished Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;HP Designjet T520 Inkjet Large Format Printer - 24\&quot; Color&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;HP Officejet Pro 8600 e-All-In-One Printer, Copier, Scanner, Fax&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;HP Standard 104 key PS/2 Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;HTC One&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;HTC One Mini&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Hypercom P1300 Pinpad&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;I Need&apos;s 3d Hello Kitty Hybrid Silicone Case Cover for HTC One X 4g with 3d Hello Kitty Stylus Pen Green/pink&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;I.R.I.S IRISCard Anywhere 5 Card Scanner&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;i.Sound Portable Power - 8000 mAh&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;iHome FM Clock Radio with Lightning Dock&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;iKross Bluetooth Portable Keyboard + Cell Phone Stand Holder + Brush for Apple iPhone 5S 5C 5, 4S 4&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Imation 16GB Mini TravelDrive USB 2.0 Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Imation 30456 USB Flash Drive 8GB&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Imation 32GB Pocket Pro USB 3.0 Flash Drive - 32 GB - Black - 1 P ...&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Imation 8gb Micro Traveldrive Usb 2.0 Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Imation 8GB Mini TravelDrive USB 2.0 Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Imation Bio 2GB USB Flash Drive Imation Corp&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Imation Bio 8GB USB Flash Drive Imation Corp&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Imation Clip USB flash drive - 8 GB&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Imation Secure Drive + Hardware Encrypted USB flash drive - 16 GB&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Imation Secure+ Hardware Encrypted USB 2.0 Flash Drive; 16GB&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Imation Swivel Flash Drive USB flash drive - 8 GB&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Imation USB 2.0 Swivel Flash Drive USB flash drive - 4 GB - Pink&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Innergie mMini Combo Duo USB Travel Charging Kit&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;invisibleSHIELD by ZAGG Smudge-Free Screen Protector&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;iOttie HLCRIO102 Car Mount&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;iOttie XL Car Mount&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Jabra BIZ 2300 Duo QD Duo Corded Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Jabra SPEAK 410&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Jabra SPEAK 410 Multidevice Speakerphone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Jabra Supreme Plus Driver Edition Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Jackery Bar Premium Fast-charging Portable Charger&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Jawbone JAMBOX Wireless Bluetooth Speaker&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Jawbone MINI JAMBOX Wireless Bluetooth Speaker&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;JBL Micro Wireless Portable Bluetooth Speaker&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Jensen SMPS-640 - speaker phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Kensington Expert Mouse Optical USB Trackball for PC or Mac&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Kensington K72356US Mouse-in-a-Box USB Desktop Mouse&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Kensington Orbit Wireless Mobile Trackball for PC and Mac&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Kensington SlimBlade Notebook Wireless Mouse with Nano Receiver&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;KeyTronic 6101 Series - Keyboard - Black&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;KeyTronic E03601U1 - Keyboard - Beige&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;KeyTronic KT400U2 - Keyboard - Black&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;KeyTronic KT800P2 - Keyboard - Black&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Kingston Digital DataTraveler 16GB USB 2.0&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Kingston Digital DataTraveler 32GB USB 2.0&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Kingston Digital DataTraveler 64GB USB 2.0&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Kingston Digital DataTraveler 8GB USB 2.0&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;KLD Oscar II Style Snap-on Ultra Thin Side Flip Synthetic Leather Cover Case for HTC One HTC M7&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Konftel 250 Conference phone - Charcoal black&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Konica Minolta magicolor 1690MF Multifunction Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Lenovo 17-Key USB Numeric Keypad&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Lexmark 20R1285 X6650 Wireless All-in-One Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Lexmark MarkNet N8150 Wireless Print Server&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Lexmark MX611dhe Monochrome Laser Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Lexmark S315 Color Inkjet Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Lexmark X 9575 Professional All-in-One Color Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;LF Elite 3D Dazzle Designer Hard Case Cover, Lf Stylus Pen and Wiper For Apple Iphone 5c Mini Lite&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;LG Electronics Tone+ HBS-730 Bluetooth Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;LG Exalt&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;LG G2&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;LG G3&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech 910-002974 M325 Wireless Mouse for Web Scrolling&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech B530 USB Headset - headset - Full size, Binaural&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech ClearChat Comfort/USB Headset H390&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Desktop MK120 Mouse and keyboard Combo&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech diNovo Edge Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech G105 Gaming Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech G13 Programmable Gameboard with LCD Display&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech G19 Programmable Gaming Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech G35 7.1-Channel Surround Sound Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech G430 Surround Sound Gaming Headset with Dolby 7.1 Technology&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech G500s Laser Gaming Mouse with Adjustable Weight Tuning&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech G600 MMO Gaming Mouse&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech G602 Wireless Gaming Mouse&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech G700s Rechargeable Gaming Mouse&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Gaming G510s - Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Illuminated - Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Illuminated Ultrathin Keyboard with Backlighting&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech K350 2.4Ghz Wireless Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Keyboard K120&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech LS21 Speaker System - PC Multimedia - 2.1-CH - Wired&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech M510 Wireless Mouse&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Media Keyboard K200&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Mobile Speakerphone P710e - speaker phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech MX Performance Wireless Mouse&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech P710e Mobile Speakerphone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Trackman Marble Mouse&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech VX Revolution Cordless Laser Mouse for Notebooks (Black)&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Wireless Anywhere Mouse MX for PC and Mac&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Wireless Boombox Speaker - portable - wireless, wired&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Wireless Gaming Headset G930&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Wireless Headset H600 Over-The-Head Design&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Wireless Headset h800&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Wireless Marathon Mouse M705&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Wireless Performance Mouse MX for PC and Mac&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Wireless Touch Keyboard K400&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Logitech Z-906 Speaker sys - home theater - 5.1-CH&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Lunatik TT5L-002 Taktik Strike Impact Protection System for iPhone 5&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Macally Suction Cup Mount&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Maxell 4.7GB DVD-R&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Maxell 4.7GB DVD-R 5/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Maxell 4.7GB DVD-RW 3/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Maxell 4.7GB DVD+R 5/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Maxell 4.7GB DVD+RW 3/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Maxell 74 Minute CD-R Spindle, 50/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Maxell 74 Minute CDR, 10/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Maxell CD-R Discs&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Maxell DVD-RAM Discs&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Maxell iVDR EX 500GB Cartridge&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Maxell LTO Ultrium - 800 GB&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Maxell Pro 80 Minute CD-R, 10/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Mediabridge Sport Armband iPhone 5s&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex 25GB 6X Branded Blu-Ray Recordable Disc, 15/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex 25GB 6X Branded Blu-Ray Recordable Disc, 30/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex Froggy Flash Drive 4 GB&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex Froggy Flash Drive 8 GB&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex Micro Travel Drive 16 GB&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex Micro Travel Drive 32 GB&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex Micro Travel Drive 4 GB&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex Micro Travel Drive 8 GB&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex Mini Travel Drive 16 GB USB 2.0 Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex Mini Travel Drive 32 GB USB 2.0 Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex Mini Travel Drive 4 GB USB 2.0 Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex Mini Travel Drive 64 GB USB 2.0 Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Memorex Mini Travel Drive 8 GB USB 2.0 Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Micro Innovations USB RF Wireless Keyboard with Mouse&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Micro Innovations Wireless Classic Keyboard with Mouse&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Micropad Numeric Keypads&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Microsoft Arc Touch Mouse&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Microsoft Natural Ergonomic Keyboard 4000&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Microsoft Natural Keyboard Elite&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Microsoft Sculpt Comfort Mouse&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Microsoft Wireless Mobile Mouse 4000&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Mitel 5320 IP Phone VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Mitel MiVoice 5330e IP Phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Mophie Juice Pack Helium for iPhone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Motorla HX550 Universal Bluetooth Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Motorola Droid Maxx&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Motorola HK250 Universal Bluetooth Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Motorola L703CM&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Motorola L804&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Motorola Moto X&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;NeatDesk Desktop Scanner &amp; Digital Filing System&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;NETGEAR AC1750 Dual Band Gigabit Smart WiFi Router&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;NETGEAR N750 Dual Band Wi-Fi Gigabit Router&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;NETGEAR RangeMax WNR1000 Wireless Router&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;netTALK DUO VoIP Telephone Service&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Nokia Lumia 1020&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Nokia Lumia 521 (T-Mobile)&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Nokia Lumia 925&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Nortel Business Series Terminal T7208 Digital phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Nortel Meridian M3904 Professional Digital phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Nortel Meridian M5316 Digital phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Nortel Networks T7316 E Nt8 B27&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Okidata B400 Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Okidata B401 Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Okidata C331dn Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Okidata C610n Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Okidata MB491 Multifunction Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Okidata MB760 Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Ooma Telo VoIP Home Phone System&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;OtterBox Commuter Series Case - iPhone 5 &amp; 5s&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;OtterBox Commuter Series Case - Samsung Galaxy S4&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;OtterBox Defender Series Case - iPhone 5c&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;OtterBox Defender Series Case - Samsung Galaxy S4&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic Business Telephones KX-T7736&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic KX - TS880B Telephone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic KX MB2061 Multifunction Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic KX MC6040 Color Laser Multifunction Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic KX T7731-B Digital phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic KX T7736-B Digital phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic KX TS208W Corded phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic KX TS3282B Corded phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic KX TS3282W Corded phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic KX-TG6844B Expandable Digital Cordless Telephone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic KX-TG9471B&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic KX-TG9541B DECT 6.0 Digital 2-Line Expandable Cordless Phone With Digital Answering System&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Panasonic Kx-TS550&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;PayAnywhere Card Reader&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Penpower WorldCard Pro Card Scanner&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Perixx PERIBOARD-512B, Ergonomic Split Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics 81402&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics Audio 478 Stereo USB Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics Audio 995 Wireless Stereo Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics Calisto P620-M USB Wireless Speakerphone System&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics Cordless Phone Headset with In-line Volume - M214C&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics CS 50-USB - headset - Convertible, Monaural&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics CS510 - Over-the-Head monaural Wireless Headset System&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics Encore H101 Dual Earpieces Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics HL10 Handset Lifter&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics MX500i Earset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics S12 Corded Telephone Headset System&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics Savi W720 Multi-Device Wireless Headset System&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics Single Ear Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics Voyager Pro HD - Bluetooth Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Plantronics Voyager Pro Legend&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;PNY Rapid USB Car Charger - Black&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Polycom CX300 Desktop Phone USB VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Polycom CX600 IP Phone VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Polycom SoundPoint IP 450 VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Polycom SoundPoint Pro SE-225 Corded phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Polycom SoundStation2 EX Conference phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Polycom VoiceStation 500 Conference phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Polycom VVX 310 VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;PowerGen Dual USB Car Charger&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;PureGear Roll-On Screen Protector&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Pyle PMP37LED&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Pyle PRT45 Retro Home Telephone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;QVS USB Car Charger 2-Port 2.1Amp for iPod/iPhone/iPad/iPad 2/iPad 3&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Razer Kraken 7.1 Surround Sound Over Ear USB Gaming Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Razer Kraken PRO Over Ear PC and Music Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Razer Tiamat Over Ear 7.1 Surround Sound PC Gaming Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;RCA H5401RE1 DECT 6.0 4-Line Cordless Handset With Caller ID/Call Waiting&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;RCA ViSYS 25423RE1 Corded phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;RCA ViSYS 25425RE1 Corded phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;RCA ViSYS 25825 Wireless digital phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;RCA Visys Integrated PBX 8-Line Router&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Ricoh - Ink Collector Unit for GX3000 Series Printers&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Rosewill 107 Normal Keys USB Wired Standard Keyboard&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Sabrent 4-Port USB 2.0 Hub&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Samsung Convoy 3&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Samsung Galaxy Mega 6.3&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Samsung Galaxy Note 2&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Samsung Galaxy Note 3&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Samsung Galaxy S III - 16GB - pebble blue (T-Mobile)&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Samsung Galaxy S4&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Samsung Galaxy S4 Active&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Samsung Galaxy S4 Mini&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Samsung HM1900 Bluetooth Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Samsung Replacement EH64AVFWE Premium Headset&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Samsung Rugby III&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;SanDisk Cruzer 16 GB USB Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;SanDisk Cruzer 32 GB USB Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;SanDisk Cruzer 4 GB USB Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;SanDisk Cruzer 64 GB USB Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;SanDisk Cruzer 8 GB USB Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;SanDisk Ultra 16 GB MicroSDHC Class 10 Memory Card&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;SanDisk Ultra 32 GB MicroSDHC Class 10 Memory Card&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;SanDisk Ultra 64 GB MicroSDHC Class 10 Memory Card&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Sannysis Cute Owl Design Soft Skin Case Cover for Samsung Galaxy S4&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Seidio BD2-HK3IPH5-BK DILEX Case and Holster Combo for Apple iPhone 5/5s - Black&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Sharp 1540cs Digital Laser Copier&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Sharp AL-1530CS Digital Copier&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Shocksock Galaxy S4 Armband&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;ShoreTel ShorePhone IP 230 VoIP phone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;SKILCRAFT Telephone Shoulder Rest, 2\&quot; x 6.5\&quot; x 2.5\&quot;, Black&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;SmartStand Mobile Device Holder, Assorted Colors&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Socket Bluetooth Cordless Hand Scanner (CHS)&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Sony 16GB Class 10 Micro SDHC R40 Memory Card&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Sony 32GB Class 10 Micro SDHC R40 Memory Card&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Sony 64GB Class 10 Micro SDHC R40 Memory Card&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Sony 8GB Class 10 Micro SDHC R40 Memory Card&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Sony Micro Vault Click 16 GB USB 2.0 Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Sony Micro Vault Click 4 GB USB 2.0 Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Sony Micro Vault Click 8 GB USB 2.0 Flash Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Speck Products Candyshell Flip Case&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Spigen Samsung Galaxy S5 Case Wallet&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Square Credit Card Reader&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Square Credit Card Reader, 4 1/2\&quot; x 4 1/2\&quot; x 1\&quot;, White&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Star Micronics TSP100 TSP143LAN Receipt Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Star Micronics TSP800 TSP847IIU Receipt Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;StarTech.com 10/100 VDSL2 Ethernet Extender Kit&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Swingline SM12-08 MicroCut Jam Free Shredder&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Texas Instrument TI-15 Fraction Calculator&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Texas Instruments TI-34 Scientific Calculator&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Toshiba IPT2010-SD IP Telephone&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;TRENDnet 56K USB 2.0 Phone, Internet and Fax Modem&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;V7 USB Numeric Keypad&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Verbatim 25 GB 6x Blu-ray Single Layer Recordable Disc, 1/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Verbatim 25 GB 6x Blu-ray Single Layer Recordable Disc, 10/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Verbatim 25 GB 6x Blu-ray Single Layer Recordable Disc, 25/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Verbatim 25 GB 6x Blu-ray Single Layer Recordable Disc, 3/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Verbatim Slim CD and DVD Storage Cases, 50/Pack&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Vtech AT&amp;T CL2940 Corded Speakerphone, Black&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Vtech CS6719&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;VTech DS6151&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Wasp CCD Handheld Bar Code Reader&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;WD My Passport Ultra 1TB Portable External Hard Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;WD My Passport Ultra 2TB Portable External Hard Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;WD My Passport Ultra 500GB Portable External Hard Drive&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Wi-Ex zBoost YX540 Cellular Phone Signal Booster&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Wilson Electronics DB Pro Signal Booster&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Wilson SignalBoost 841262 DB PRO Amplifier Kit&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Wireless Extenders zBoost YX545 SOHO Signal Booster&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Xblue XB-1670-86 X16 Small Office Telephone - Titanium&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Xerox WorkCentre 6505DN Laser Multifunction Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Xiaomi Mi3&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Zebra GK420t Direct Thermal/Thermal Transfer Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Zebra GX420t Direct Thermal/Thermal Transfer Printer&quot;' />
+                <groupfilter function='member' level='[none:Product Name:nk]' member='&quot;Zebra ZM400 Thermal Label Printer&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.105v33w097flo312ed01c18ssyof].[none:Product Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.105v33w097flo312ed01c18ssyof].[none:Product Name:nk]</rows>
+        <cols>[federated.105v33w097flo312ed01c18ssyof].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{9353ADC6-56E8-4510-A612-E847B6022D7D}' />
+    </worksheet>
+    <worksheet name='Sheet 1Extract Tech Cat'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore)' name='federated.105v33w097flo312ed01c18ssyof' />
+          </datasources>
+          <datasource-dependencies datasource='federated.105v33w097flo312ed01c18ssyof'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.105v33w097flo312ed01c18ssyof].[none:Category:nk]</rows>
+        <cols>[federated.105v33w097flo312ed01c18ssyof].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{1B22C20B-D1A4-420C-AFE7-40C0D3C58B8B}' />
+    </worksheet>
+    <worksheet name='Sheet 3 Extra Tec cat'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders (Sample - Superstore)' name='federated.105v33w097flo312ed01c18ssyof' />
+          </datasources>
+          <datasource-dependencies datasource='federated.105v33w097flo312ed01c18ssyof'>
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.105v33w097flo312ed01c18ssyof].[none:Sub-Category:nk]'>
+            <groupfilter expression='SUM([Sales]) &gt;= 50000.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='level-members' level='[none:Sub-Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.105v33w097flo312ed01c18ssyof].[none:Sub-Category:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.105v33w097flo312ed01c18ssyof].[sum:Sales:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.105v33w097flo312ed01c18ssyof].[none:Sub-Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.105v33w097flo312ed01c18ssyof].[none:Sub-Category:nk]</rows>
+        <cols>[federated.105v33w097flo312ed01c18ssyof].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{5C030878-52BF-4A2B-831C-A66E23023DEC}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1Extract Tech Cat'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.105v33w097flo312ed01c18ssyof].[sum:Sales:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.105v33w097flo312ed01c18ssyof].[none:Category:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.105v33w097flo312ed01c18ssyof].[none:Category:nk]</field>
+                  <field>[federated.105v33w097flo312ed01c18ssyof].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Technology&quot;</value>
+                <value>839893.278999998</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.105v33w097flo312ed01c18ssyof].[none:Category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{28A525C1-8B6A-4BD0-A3F3-8A1663528BE5}' />
+    </window>
+    <window class='worksheet' name='Sales of apple Product'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.105v33w097flo312ed01c18ssyof].[none:Product Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{51B2182F-428F-4C3A-80D2-C3A8CD6CED64}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3 Extra Tec cat'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.105v33w097flo312ed01c18ssyof].[none:Sub-Category:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{8E5BBC5D-47B5-49C5-AFF4-22AE6D29F30B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sales of apple Product' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1Extract Tech Cat' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3 Extra Tec cat' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
